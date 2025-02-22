@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+}
+
+header {
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 150px;
+    height: 80px;
+    border: 1px solid #ddd;
+    margin-right: 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+nav a.active {
+    background: #4A90E2;
+    color: white;
+}
+
+.add-listing-btn {
+    position: absolute;
+    right: 20px;
+    padding: 8px 16px;
+    border: 2px solid #000;
+    background: white;
+    border-radius: 5px;
+}
+
+.listings-container {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.filters-sidebar {
+    width: 250px;
+    flex-shrink: 0;
+}
+
+.filters-box {
+    border: 2px solid #000;
+    padding: 15px;
+}
+
+.filters-box h2 {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.filter-section {
+    margin-bottom: 15px;
+}
+
+.filter-section label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.filter-section select,
+.filter-section input[type="text"] {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #000;
+    margin-bottom: 5px;
+}
+
+.search-box {
+    display: flex;
+    gap: 5px;
+}
+
+.search-box select {
+    flex-grow: 1;
+}
+
+.checkbox-group {
+    margin: 10px 0;
+}
+
+.checkbox-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.price-inputs {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.price-inputs input {
+    width: 50%;
+}
+
+button {
+    padding: 5px 15px;
+    border: 1px solid #000;
+    background: white;
+    cursor: pointer;
+}
+
+.listings-section {
+    flex-grow: 1;
+}
+
+.listing-box {
+    border: 2px solid #000;
+    padding: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.listing-image {
+    width: 150px;
+    height: 150px;
+    border: 2px solid #000;
+    flex-shrink: 0;
+}
+
+.listing-content {
+    flex-grow: 1;
+}
+
+.listing-content h3 {
+    margin-bottom: 10px;
+}
+
+.listing-info {
+    display: flex;
+    gap: 20px;
+}
+
+.book-now {
+    padding: 8px 16px;
+    border: 2px solid #000;
+    background: white;
+    border-radius: 5px;
+    white-space: nowrap;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #f5f5f5;
+    margin-top: 60px;
+}
+
+@media (max-width: 768px) {
+    .listings-container {
+        flex-direction: column;
+    }
+
+    .filters-sidebar {
+        width: 100%;
+    }
+
+    .listing-box {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .listing-info {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .add-listing-btn {
+        position: static;
+        margin-top: 20px;
+        width: 100%;
+    }
+}
+
+.button-div {
+    width: 220px;
+}
+
+.book-now {
+    padding: 8px 16px;
+    border: 2px solid #000;
+    background: white;
+    border-radius: 5px;
+    white-space: nowrap;
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+}
+
+.book-now:hover {
+    background: #000;
+    color: white;
+}
