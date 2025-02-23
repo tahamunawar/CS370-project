@@ -18,7 +18,7 @@ header {
 .header-content {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin-bottom: 20px;
 }
 
@@ -26,7 +26,6 @@ header {
     width: 150px;
     height: 80px;
     border: 1px solid #ddd;
-    margin-right: 20px;
 }
 
 h1 {
@@ -153,4 +152,10 @@ footer {
     .court-info {
         flex-direction: column;
     }
+}
+
+.logo img {
+    width: 150px;
+    height: 80px;
+    object-fit: contain; /* Ensures aspect ratio is maintained */
 }
